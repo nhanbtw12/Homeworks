@@ -11,14 +11,17 @@
         </head>
         <body>
                         <h2 style="font-style: italic; font-family: 'Times New Roman', Times, serif; font-size: 2rem;">Trần Chí Nhân</h2>
-                        <a href="mailto:tranchinhan20102021@gmail.com?subject=Xin%20thêm%20tài%20liệu?&body=Viết%20ở%20đây%20" style="font-style: italic; font-family: 'Times New Roman', Times, serif; font-size: 2rem;" >Liên hệ</a>
+                         <a href="mailto:tranchinhan20102021@gmail.com?subject=Xin%20thêm%20tài%20liệu?&body=Viết%20ở%20đây...%20" style="font-style: italic; font-family: 'Times New Roman', Times, serif; font-size: 2rem;" >Liên hệ</a>
                         <div id="clock"></div>
                         <script>
                                 function updateClock() {
                                         const h = String(new Date().getHours()).padStart(2, '0');
                                         const m = String(new Date().getMinutes()).padStart(2, '0');
                                         const s = String(new Date().getSeconds()).padStart(2, '0');
-                                        document.getElementById("clock").textContent = ` Bây giờ là ${h}:${m}:${s}`;
+                                        const d = String(new Date().getDate()).padStart(2, '0');
+                                        const months =  String(new Date().getMonth()+1).padStart(2, '0');
+                                        const years =  String(new Date().getFullYear()).padStart(2, '0');
+                                        document.getElementById("clock").textContent = ` Bây giờ là ${h}:${m}:${s}, ngày ${d} tháng ${months} năm ${years}`;
                                 }
 
                                 updateClock();            
@@ -27,4 +30,3 @@
                         <iframe src="https://drive.google.com/file/d/1xdrCYFiXE_G0k5xP5mWzutGo9aNr0zCd/preview" style="width: 100%; height: 70vh; border: 0;"></iframe>             
         </body>
 </html>
-
