@@ -1,40 +1,31 @@
 <!DOCTYPE html>
-<html>
-        <head>
-                <title>Bài tập</title>
-                <script async src="https://www.googletagmanager.com/gtag/js?id=G-2D7TETGZ0F"></script>
-                <script>
-                              window.dataLayer = window.dataLayer || [];
-                                function gtag(){dataLayer.push(arguments);}
-                                gtag('js', new Date());
-                                gtag('config', 'G-2D7TETGZ0F');
-</script>
-                <style>
-                        #clock {
-                                font-size: 2rem;
-                                font-family: 'Times New Roman', Times, serif;
-                        }
-                </style>
-        </head>
-        <body>
-                        <h2 style="font-style: italic; font-family: 'Times New Roman', Times, serif; font-size: 2rem;">Trần Chí Nhân</h2>
-                         <a href="mailto:tranchinhan20102021@gmail.com?subject=Xin%20thêm%20tài%20liệu?&body=Viết%20ở%20đây...%20" style="font-style: italic; font-family: 'Times New Roman', Times, serif; font-size: 2rem;" >Liên hệ GMAIL</a>
-                        <div id="clock"></div>
-                        <script>
-                                function updateClock() {
-                                        const h = String(new Date().getHours()).padStart(2, '0');
-                                        const m = String(new Date().getMinutes()).padStart(2, '0');
-                                        const s = String(new Date().getSeconds()).padStart(2, '0');
-                                        const d = String(new Date().getDate()).padStart(2, '0');
-                                        const months =  String(new Date().getMonth()+1).padStart(2, '0');
-                                        const years =  String(new Date().getFullYear()).padStart(2, '0');
-                                        document.getElementById("clock").textContent = ` Bây giờ là ${h}:${m}:${s}, ngày ${d} tháng ${months} năm ${years}`;
-                                }
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> x^2 -10023x + 1 = 0 </title>
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2D7TETGZ0F"></script>
+    <script src="scripts/Analytics.js"></script>
+     <!---- Email -->
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <!-- Core -->
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="scripts/main.js"></script>
+</head>
+<body>
+    <button onclick="contract()"> ???Ai tạo ra???</button>
+    <p id="y"></p>
+    <div id="z"></div>
+   <p id="b"></p>
+   <p id="c"></p>
 
-                                updateClock();            
-                                setInterval(updateClock, 1000); 
-                        </script>
-                        <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fnhanbtw12.github.io%2FHomeworks&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=Lượt%20xem&edge_flat=true"/>
-                        <iframe src="https://drive.google.com/file/d/1xdrCYFiXE_G0k5xP5mWzutGo9aNr0zCd/preview" style="width: 100%; height: 70vh; border: 0;"></iframe>             
-        </body>
+  <p id="d"></p>
+  <script>
+      document.getElementById("d").textContent = "Tuần 12 - Chúc một ngày tốt lành";
+      document.getElementById("b").innerHTML = "Thấy OK?<button id='clickBtn'>!!!CLICK VÀO ĐÂY!!!</button>";
+  </script>
+    <script src="scripts/Email.js"></script>
+  <table id="x"></table>
+</body>
 </html>

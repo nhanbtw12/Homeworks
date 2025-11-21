@@ -1,0 +1,52 @@
+body {
+    margin: 5%;
+    margin-right: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* base table style */
+table {
+    border-collapse: collapse;
+    width: 50%;
+    max-width: 100%;
+        overflow-x: auto;
+}
+
+/* cells */
+th, td {
+    border: 1px solid oklch(44.6% 0.03 256.802);
+    padding: 8px;
+    text-align: left;
+}
+
+/* responsive adjustments */
+@media (max-width: 900px) {
+    table {
+        width: 80%;
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        margin: 3%;
+    }
+
+    table {
+        width: 100%;
+        font-size: 0.9rem;
+    }
+
+    th, td {
+        padding: 6px;
+    }
+}
+
+@media (max-width: 400px) {
+    table {
+        font-size: 0.8rem;
+    }
+
+    th, td {
+        padding: 5px;
+    }
+}
